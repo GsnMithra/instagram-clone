@@ -1,0 +1,38 @@
+.LoginPage {
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+}
+
+.loginPrompt, .pictureView {
+    padding: 2.9rem;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.loginInput {
+    padding-top: 2.9rem;
+}
+
+#logoImage {
+    height: 3.355rem;
+    width: auto;
+}
+
+.pictureView {
+    /* border: 5px solid grey; */
+    left: 30%;
+    top: 50%;
+}
+
+.loginPrompt {
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 0.9px;
+    left: 50%;
+    top: 50%;
+}
+
+@media (max-width: 768px) {
+    .pictureView {
+        display: none;
+    }
+}
