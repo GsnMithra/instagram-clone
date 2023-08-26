@@ -14,8 +14,9 @@
     border-radius: 0.9px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
+    align-items: center;
     text-align: center;
+    border: 2px solid red;
 }
 
 .pictureView {
@@ -47,7 +48,7 @@
 }
 
 .loginInput {
-    padding-top: 2.9rem;
+    padding-top: 2.1rem;
     display: flex;
     flex-direction: column;
     gap: 7px;

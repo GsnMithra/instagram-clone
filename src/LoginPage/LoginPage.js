@@ -1,10 +1,11 @@
 import './LoginPage.css';
 import Logo from '../Resources/instagramLogo.jpg';
 import InputBox from '../InputBox/InputBox';
+import Footer from '../Footer/Footer';
 
 function LoginPage () {
     const handleClick = (event) => {
-        event.preventDefault();
+        event.preventDefault ();
     };
 
     return (
@@ -13,7 +14,7 @@ function LoginPage () {
                 <div className='image'>
                     {/* <Link to='/'> */}
                     <a href='#' onClick={handleClick}>
-                        <img src={Logo} id='logoImage' alt='Instagram'></img>
+                        <img src={Logo} id='logoImage'></img>
                     </a>
                     {/* </Link> */}
                 </div>
@@ -30,6 +31,7 @@ function LoginPage () {
             <div className='pictureView'>
 
             </div>
+            <Footer />
         </div>
     );
 }
