@@ -1,7 +1,7 @@
 import './InputBox.css';
 import { useState } from 'react';
 
-function InputBox ({ placeHolder }) {
+function InputBox ({ placeHolder, type }) {
     const [username, setUsername] = useState('');
     const [isInputFocused, setIsInputFocused] = useState(false);
 
@@ -19,7 +19,7 @@ function InputBox ({ placeHolder }) {
 
     return (
         <input
-            type="text"
+            type={type}
             id="username"
             className='customized-input'
             value={username}
