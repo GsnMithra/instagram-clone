@@ -1,9 +1,14 @@
 
 .customized-input {
-    padding: 8px;
+    padding: 10px;
     border: 0.8px solid rgb(216, 216, 216);
     border-radius: 0.9px;
-    font-size: 14px;
+    font-size: 13px;
+    width: 242px;
+}
+
+.customized-input::placeholder {
+    font-weight: 500;
 }
 
 .customized-input:focus {

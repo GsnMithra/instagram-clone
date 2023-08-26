@@ -3,10 +3,47 @@
     height: auto;
 }
 
-.loginPrompt, .pictureView {
+.loginPrompt {
+    width: 256px;
+    padding: 2.9rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 0.9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+}
+
+.pictureView {
+    width: 256px;
     padding: 2.9rem;
     position: absolute;
     transform: translate(-50%,-50%);
+    align-items: center;
+}
+
+.lineSeperator {
+    align-items: center;
+    display: flex;
+    margin: 20px 0;
+    width: 280px;
+}
+
+#leftLine, #rightLine {
+    flex-grow: 1;
+    border: 1px solid #e6e6e6;
+    margin: 0 10px;
+}
+
+#orText {
+    margin: 7px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: rgb(113, 113, 113);
 }
 
 .loginInput {
@@ -18,7 +55,6 @@
 
 #logoImage {
     height: 3.355rem;
-    width: auto;
 }
 
 .pictureView {
