@@ -1,6 +1,6 @@
 .LoginPage {
     width: 100%;
-    height: auto; /* Adjust height as needed */
+    height: auto;
 }
 
 .loginPrompt, .pictureView {
@@ -11,6 +11,9 @@
 
 .loginInput {
     padding-top: 2.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
 }
 
 #logoImage {

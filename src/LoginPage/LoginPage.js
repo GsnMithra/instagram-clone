@@ -1,14 +1,8 @@
 import './LoginPage.css';
-import { useState } from 'react';
 import Logo from '../Resources/instagramLogo.jpg';
+import InputBox from '../InputBox/InputBox';
 
 function LoginPage () {
-    const [username, setUsername] = useState('');
-
-    const handleUsernameChange = (event) => {
-        setUsername (event.target.value);
-    }
-
     return (
         <div className='LoginPage'>
             <div className='loginPrompt'>
@@ -18,12 +12,8 @@ function LoginPage () {
                     {/* </Link> */}
                 </div>
                 <div className='loginInput'>
-                    <input
-                        type="text"
-                        id="username"
-                        value={username}
-                        onChange={handleUsernameChange}
-                    />
+                    <InputBox placeHolder='Phone number, username, or email'/>
+                    <InputBox placeHolder='Password'/>
                 </div>
             </div>
             <div className='pictureView'>
