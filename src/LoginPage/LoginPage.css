@@ -1,5 +1,6 @@
 .LoginPage {
-    padding: 6rem;
+    min-height: 10vh;
+    padding-top: 12rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,6 +12,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#getApp {
+    cursor: text;
+    font-size: 15px;
+    font-weight: 450;
+    padding: 0.9rem;
+}
+
+.mobileAppliction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+#android, #ios {
+    height: 2.53rem;
+    margin: 4px;
 }
 
 .facebookLogin {
@@ -140,9 +161,9 @@ span, .loginButton {
 
 .createAccount {
     display: flex;
-    height: 10px;
-    width: 290.4px;
-    padding: 2rem;
+    height: 1px;
+    width: 295.5px;
+    padding: 1.8rem;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -162,7 +183,7 @@ span, .loginButton {
 }
 
 .pictureView {
-    margin-top: 3rem;
+    margin-top: -1rem;
     width: 24.5rem;
     height: 37rem;
     background-image: url('../Resources/instagramMainBackground.png');
@@ -176,6 +197,7 @@ span, .loginButton {
     display: flex;
     margin: 20px 0;
     width: 265px;
+    margin-bottom: 1rem;
 }
 
 #leftLine, #rightLine {

@@ -9,6 +9,8 @@ import Footer from '../Footer/Footer';
 import ImageA from '../Resources/instagramMain.png'
 import ImageB from '../Resources/instagramMain2.png'
 import ImageC from '../Resources/instagramMain3.png'
+import AppStore from '../Resources/appStore.png';
+import PlayStore from '../Resources/googlePlay.png';
 
 function LoginPage () {
     const handleClick = (event) => {
@@ -56,6 +58,13 @@ function LoginPage () {
                 <div className='createAccount'>
                     <span id='create'>Don't have an account?</span>
                     <span id='signup'>Sign up</span>
+                </div>
+                <div className='mobileAppliction'>
+                    <span id='getApp'>Get the app.</span>
+                    <div className='iosAndroid'>
+                        <img src={AppStore} id='ios'></img>
+                        <img src={PlayStore} id='android'></img>
+                    </div>
                 </div>
             </div>
             <Footer />
