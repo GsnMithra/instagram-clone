@@ -1,6 +1,5 @@
 .LoginPage {
-    min-height: 10vh;
-    padding-top: 12rem;
+    min-height: 95vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
