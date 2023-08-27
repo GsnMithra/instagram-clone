@@ -258,3 +258,12 @@ span, .loginButton {
         display: none;
     }
 }
+
+@media (max-width: 460px) {
+    .LoginPage {
+        min-height: 50vh;
+    }
+    .loginPrompt, .createAccount {
+        border: none;
+    }
+}
