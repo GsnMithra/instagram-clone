@@ -1,0 +1,24 @@
+:root {
+    --button-ig-color: rgb(0, 149, 246);
+    --button-ig-color-hover: rgb(24, 119, 242);
+    --border-ig-color: rgb(216, 216, 216);
+}
+
+.Button:hover {
+    background-color: var(--button-ig-color-hover);
+}
+
+.Button {
+    cursor: pointer;
+    padding: 7px 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button-ig-color);
+    width: 264px;
+    border-radius: 8px;
+    height: 18px;
+    font-size: 14.5px;
+    font-weight: 700;
+    color: white;
+}

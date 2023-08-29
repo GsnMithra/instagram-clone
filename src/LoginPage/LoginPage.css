@@ -1,3 +1,9 @@
+:root {
+    --button-ig-color: rgb(0, 149, 246);
+    --button-ig-color-hover: rgb(24, 119, 242);
+    --border-ig-color: rgb(216, 216, 216);
+}
+
 .LoginPage {
     min-height: 95vh;
     display: flex;
@@ -52,26 +58,15 @@
     padding: 3.5px;
 }
 
+#wrongCredentials {
+    font-size: 14px;
+    color: red;
+    font-weight: 450;
+    margin: 13px;
+}
+
 span, .loginButton {
     cursor: pointer;
-}
-
-.loginButton:hover {
-    background-color: rgb(24, 119, 242);
-}
-
-.loginButton {
-    padding: 7px 7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(0, 149, 246);
-    width: 264px;
-    border-radius: 8px;
-    height: 18px;
-    font-size: 14.5px;
-    font-weight: 700;
-    color: white;
 }
 
 .imageX {
@@ -145,7 +140,7 @@ span, .loginButton {
 }
 
 .createAccount, .loginPrompt {
-    border: 1px solid rgb(216, 216, 216);
+    border: 1px solid var(--border-ig-color);
     border-radius: 0.9px;
 }
 
@@ -155,7 +150,7 @@ span, .loginButton {
     align-items: center;
     text-align: center;
     margin-bottom: 10px;
-    width: 276px;
+    width: 267px;
 }
 
 .createAccount {
@@ -176,7 +171,7 @@ span, .loginButton {
 }
 
 #signup {
-    color: rgb(0, 149, 246);
+    color: var(--button-ig-color);
     font-weight: 850;
     font-size: 14px;
 }
@@ -232,6 +227,7 @@ span, .loginButton {
     height: 3.355rem;
     padding-top: 0.633rem;
     padding-bottom: 0;
+    cursor: pointer;
 }
 
 #phoneBackground {
@@ -246,7 +242,7 @@ span, .loginButton {
 }
 
 .loginPrompt {
-    border: 1px solid rgb(216, 216, 216);
+    border: 1px solid var(--border-ig-color);
     padding-bottom: 23px;
     border-radius: 0.9px;
     left: 50%;

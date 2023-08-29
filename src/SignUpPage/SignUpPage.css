@@ -1,0 +1,121 @@
+:root {
+    --button-ig-color: rgb(0, 149, 246);
+    --button-ig-color-hover: rgb(24, 119, 242);
+    --border-ig-color: rgb(216, 216, 216);
+}
+
+a {
+    color: #1e4592;
+}
+
+
+.Button:hover {
+    background-color: var(--button-ig-color-hover);
+}
+
+.Button {
+    cursor: pointer;
+    padding: 7px 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button-ig-color);
+    width: 264px;
+    border-radius: 8px;
+    height: 18px;
+    font-size: 14.5px;
+    font-weight: 700;
+    color: white;
+}
+
+.SignUpPage {
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainWindow {
+    border: 1px solid var(--border-ig-color);
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    width: 270px;
+}
+
+.facebookLogin {
+    margin: 10px;
+    width: 95%;
+}
+
+.lineSeperator {
+    align-items: center;
+    display: flex;
+    margin: 2px 0;
+    width: 275px;
+}
+
+.inputPrompts {
+    gap: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.eula {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    width: 280px;
+    gap: 15px;
+}
+
+#signupButton {
+    margin-top: 15px;
+}
+
+#eulaAbove, #eulaBelow {
+    cursor: text;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(115, 115, 115);
+}
+
+
+#leftLine, #rightLine {
+    border: 1px solid #e6e6e6;
+    margin: 0 10px;
+}
+
+#orText {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: rgb(113, 113, 113);
+}
+
+#facebookicon {
+    height: 20px;
+    margin-right: 5px;
+}
+
+#sometext {
+    margin: 8.5px;
+    width: 270px;
+    word-wrap: break-word;
+}
+
+#text {
+    cursor: text;
+    font-weight: 700;
+    color: rgb(119, 119, 119);
+}
+
+#logo {
+    cursor: pointer;
+    height: 3.350rem;
+}

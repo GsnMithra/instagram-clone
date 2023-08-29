@@ -1,32 +1,13 @@
 import './InputBox.css';
-import { useState } from 'react';
 
-function InputBox ({ placeHolder, type }) {
-    const [username, setUsername] = useState('');
-    const [isInputFocused, setIsInputFocused] = useState(false);
-
-    const handleInputFocus = () => {
-        setIsInputFocused (true);
-    }
-
-    const handleUsernameChange = (event) => {
-        setUsername (event.target.value);
-    }
-
-    const handleInputBlur = () => {
-        setIsInputFocused (username !== '');
-    };
-
+function InputBox ({ placeHolder, type, value, onChange }) {
     return (
         <input
             type={type}
-            id="username"
             className='customized-input'
-            value={username}
-            onChange={handleUsernameChange}
+            value={value}
+            onChange={onChange}
             placeholder={placeHolder}
-            onFocus={handleInputFocus}
-            onBlur={handleInputBlur}
         />
     );
 }
