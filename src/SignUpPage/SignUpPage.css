@@ -107,6 +107,7 @@ a {
 }
 
 #orText {
+    cursor: text !important;
     font-size: 0.85rem;
     font-weight: 700;
     color: rgb(113, 113, 113);

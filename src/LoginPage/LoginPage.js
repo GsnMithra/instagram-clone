@@ -43,7 +43,7 @@ function LoginPage () {
                 if (!reply.exists | !reply.credentials)
                     setVisible (true);
                 if (reply.exists && reply.credentials)
-                    navigate ('/hello');
+                    navigate ('/');
             }).catch ((e) => {
                 console.error (e)
             })
@@ -77,7 +77,7 @@ function LoginPage () {
                             onChange={handleChangePass}
                             />
                     </div>
-                    <div onClick={login}>
+                    <div onClick={login} id='loginButton'>
                         <Button value='Log in' />
                     </div>
                     <div className='lineSeperator'>
