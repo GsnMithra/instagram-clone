@@ -43,7 +43,7 @@ function LoginPage () {
                 if (!reply.exists | !reply.credentials)
                     setVisible (true);
                 if (reply.exists && reply.credentials)
-                    navigate ('/');
+                    navigate ('/home');
             }).catch ((e) => {
                 console.error (e)
             })

@@ -157,7 +157,7 @@ span, .loginButton {
 .createAccount {
     display: flex;
     height: 1px;
-    width: 287px;
+    width: 280px;
     padding: 1.8rem;
     flex-direction: row;
     align-items: center;
