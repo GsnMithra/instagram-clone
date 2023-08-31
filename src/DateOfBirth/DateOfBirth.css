@@ -1,0 +1,39 @@
+.DateOfBirth {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 7px
+}
+
+.monthPicker, .datePicker, .yearPicker {
+    padding-bottom: 7.5px !important;
+    cursor: default !important;
+    border: 1px solid var(--border-ig-color);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6.5px;
+}
+
+select {
+    cursor: default !important;
+}
+
+.drop {
+    cursor: default !important;
+    border: solid rgb(121, 121, 121);
+    border-width: 0 1px 1px 0;
+    padding: 3.5px;
+    display: inline-block;
+    z-index: -1;
+    cursor: pointer;
+    margin-bottom: 0.338rem !important;
+    margin-left: 5px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}

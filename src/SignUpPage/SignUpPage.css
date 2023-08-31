@@ -4,10 +4,10 @@
     --border-ig-color: rgb(216, 216, 216);
 }
 
-a {
-    color: #1e4592;
+p {
+    padding: 0;
+    margin: 0;
 }
-
 
 .Button:hover {
     background-color: var(--button-ig-color-hover);
@@ -33,6 +33,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.birthdayPrompt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .mainWindow {
@@ -77,8 +84,75 @@ a {
 }
 
 .createAccount {
-    margin-top: 10px;
+    margin-top: 11px;
     padding: 2rem;
+}
+
+.headingText {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#learn, #privacy, #cookies {
+    color: #1e4592;
+}
+
+#birthdayHeading, #headingTextLink, #headingText {
+    cursor: default;
+    width: 400px;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+#birthdayHeading {
+    font-weight: 600;
+}
+
+#headingTextLink {
+    cursor: pointer !important;
+    text-decoration: none;
+    color: var(--button-ig-color);
+    font-weight: 600;
+}
+
+#birthdayIcon {
+    margin: 0.7rem;
+    height: 6rem;
+}
+
+.textArea {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+#goback {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--button-ig-color);
+}
+
+#finalize {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#duhText {
+    width: 300px;
+    word-wrap: break-word;
+}
+
+#mandatoryText, #duhText {
+    cursor: text;
+    color: rgb(106, 106, 106);
+    font-size: 12px;
+    font-weight: 550;
 }
 
 #getApp {
