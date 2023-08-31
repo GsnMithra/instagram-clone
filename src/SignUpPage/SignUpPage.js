@@ -20,16 +20,15 @@ function SignUpPage () {
     const toggleBirthday = () => {
         setBirthday (!birthdayPromptVisible)
     }
-
-    const toggleBackBirthday = (e) => {
-        e.preventDefault ();
-        setBirthday (!birthdayPromptVisible)
-    }
     
     const [emailornumber, setEmailNumber] = useState ('')
     const [fullname, setFullName] = useState ('')
     const [username, setUserName] = useState ('')
     const [password, setPassword] = useState ('')
+    
+    const [month, monthChange] = useState (-1)
+    const [date, dateChange] = useState (-1)
+    const [year, yearChange] = useState (-1)
 
     const handleChangeNumber = (change) => {
         setEmailNumber (change.target.value)
@@ -52,7 +51,12 @@ function SignUpPage () {
             mailornum: emailornumber,
             fullname: fullname,
             username: username,
-            password: password
+            password: password,
+            dateofbirth: {
+                month: month,
+                date: date,
+                year: year
+            }
         };
 
         axios.post ('http://localhost:4000/register', details)
@@ -76,7 +80,11 @@ function SignUpPage () {
                                 <span id='headingText'>This won't be a part of your public profile.</span>
                                 <a href='https://help.instagram.com/155833707900388'><span id='headingTextLink'>Why do I need to provide my birthday?</span></a>
                             </div>
-                            <DateOfBirth />
+                            <DateOfBirth 
+                                monthSet={monthChange}
+                                dateSet={dateChange}
+                                yearSet={yearChange}
+                            />
                         </div>
                         <div className='textArea'>
                             <span id='mandatoryText'>
@@ -86,9 +94,11 @@ function SignUpPage () {
                                 Use your own birthday, even if this account is for a business, a pet, or something else
                             </span>
                         </div>
-                        <div id="finalize" onClick={register}>
-                            <Button value='Next' />
-                            <div onClick={(e) => toggleBackBirthday (e)}>
+                        <div id="finalize">
+                            <div onClick={register}>
+                                <Button value='Next' />
+                            </div>
+                            <div onClick={toggleBirthday}>
                                 <span id='goback'>Go Back</span>
                             </div>
                         </div>

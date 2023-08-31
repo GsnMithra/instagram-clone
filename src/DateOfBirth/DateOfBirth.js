@@ -2,10 +2,32 @@ import './DateOfBirth.css'
 
 import { useEffect, useState } from 'react'
 
-function DateOfBirth () {
+function DateOfBirth ({ monthSet, dateSet, yearSet }) {
     const [monthOptions, setMonthOptions] = useState ([])
     const [dateOptions, setDateOptions] = useState ([])
     const [yearOptions, setYearOptions] = useState ([])
+
+    const [selectedMonth, setSelectedMonth] = useState (8);
+    const [selectedDate, setSelectedDate] = useState (31);
+    const [selectedYear, setSelectedYear] = useState (new Date ().getFullYear ());
+
+    const handleMonthChange = (event) => {
+        const newMonth = parseInt (event.target.value);
+        setSelectedMonth (newMonth);
+        monthSet (newMonth);
+    }
+    
+    const handleDateChange = (event) => {
+        const newDate = parseInt (event.target.value);
+        setSelectedDate (newDate);
+        dateSet (newDate);
+    }
+    
+    const handleYearChange = (event) => {
+        const newYear = parseInt (event.target.value);
+        setSelectedYear (newYear);
+        yearSet (newYear);
+    };
 
     const map = new Map ()
     map.set (1, "January")
@@ -65,7 +87,7 @@ function DateOfBirth () {
         <div className='DateOfBirth'>
             <form>
                 <div className='monthPicker'>
-                    <select id="month">
+                    <select id="month" value={selectedMonth} onChange={handleMonthChange}>
                         {/* <option value="8" selected="selected">August</option> */}
                         {
                             monthOptions.map ((option) => (
@@ -82,7 +104,7 @@ function DateOfBirth () {
             </form>
             <form>
                 <div className='datePicker'>
-                    <select id="date">
+                    <select id="date" value={selectedDate} onChange={handleDateChange}>
                         {/* <option value="31" selected='selected'>31</option> */}
                         {
                             dateOptions.map ((option) => (
@@ -100,7 +122,7 @@ function DateOfBirth () {
             <form>
                 {/* year leads down to 1919 */}
                 <div className='yearPicker'>
-                    <select id="year">
+                    <select id="year" value={selectedYear} onChange={handleYearChange}>
                         {/* <option value={year}>{year}</option> */}
                         {
                             yearOptions.map ((option) => (
