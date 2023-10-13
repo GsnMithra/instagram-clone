@@ -1,6 +1,7 @@
 import './HomePage.css';
 import InstagramLogo from '../Resources/instagramLogo.jpg'
-import Icons from '../Resources/extraImages.png'
+
+import HomeIcon from '../Resources/paneInstagramMain/homeInstagram.png'
 
 function HomePage () {
     return (
@@ -12,8 +13,10 @@ function HomePage () {
                     </div>
                     <div className='menuButtons'>
                         <div id='button'>
-                            <img src={Icons} id='homeButton' alt=''></img>
-                            <span>Home</span>
+                            <div id='home'>
+                                <img src={HomeIcon} id='homeButton' alt=''></img>
+                                <span>Home</span>
+                            </div>
                         </div>
                     </div>
                 </div>
