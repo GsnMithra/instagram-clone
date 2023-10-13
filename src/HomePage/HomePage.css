@@ -28,26 +28,27 @@
 .menuButtons {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-#button {
+#buttons {
     display: flex;
     padding: 5px;
     height: 38px;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
     width: 225px;
     cursor: pointer;
     overflow: hidden;
     border-radius: 5px;
-    margin-left: 10px;
+    margin-left: 15px;
     flex-direction: column;
 }
 
 #homeButton {
     width: 27px;
     height: 25px;
-    padding: 5px;
+    padding: 10px;
 }
 
 #home {
@@ -60,9 +61,10 @@
 #instaLogo {
     margin: 1.2rem;
     margin-top: 2.47rem;
-    height: 2.1rem;
+    margin-left: 1.5rem;
+    height: 1.95rem;
 }
 
-#button:hover {
+#buttons:hover {
     background-color: #f4f4f4;
 }
