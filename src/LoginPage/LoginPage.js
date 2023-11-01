@@ -22,13 +22,23 @@ function LoginPage () {
     const [user, setUser] = useState ('')
     const [pass, setPass] = useState ('')
     const [wrong, setVisible] = useState (false)
+    const [backgroundColor, setBackgroundColor] = useState (true)
+
+    const checkConstraint = () => {
+        if (user.length >= 1 && pass.length >= 6)
+            setBackgroundColor (false)
+        else 
+            setBackgroundColor (true)
+    }
 
     const handleChangeUser = (user) => {
         setUser (user.target.value);
+        checkConstraint ();
     }
 
     const handleChangePass = (pass) => {
         setPass (pass.target.value);
+        checkConstraint ();
     }
 
     const login = () => {

@@ -4,10 +4,6 @@
     --border-ig-color: rgb(216, 216, 216);
 }
 
-.HomePage {
-    min-height: 100vh;
-}
-
 .mainContent {
     display: flex;
     flex-direction: row;
@@ -21,7 +17,7 @@
     justify-content: flex-start;
     flex-direction: column;
     height: 100vh;
-    width: 260px;
+    width: 22%;
     border-right: 1px solid var(--border-ig-color);
 }
 
@@ -29,6 +25,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 85%;
 }
 
 #buttons {
@@ -37,7 +34,7 @@
     height: 38px;
     align-items: flex-start;
     justify-content: center;
-    width: 225px;
+    width: 100%;
     cursor: pointer;
     overflow: hidden;
     border-radius: 5px;
@@ -67,4 +64,74 @@
 
 #buttons:hover {
     background-color: #f4f4f4;
+}
+
+.homePage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.homeMainContent {
+    height: 100vh;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caughtUp {
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.feedCompleted {
+    margin: 69px;
+    width: 45%;
+}
+
+#tick {
+    margin-top: -40px;
+    background-color: white;
+}
+
+.homeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    border: 1px solid green;
+    min-height: 500px;
+}
+
+.homeStories {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    border: 1px solid blue;
+}
+
+.homeSuggestions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 300px;
+    margin-top: -550px;
+    margin-left: 50px
+}
+
+.homePage > * {
+    border: 1px solid red;
 }

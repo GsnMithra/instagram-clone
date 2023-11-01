@@ -197,6 +197,10 @@ span, .loginButton {
     margin-left: -9px !important;
 }
 
+#loginButtonDisabled {
+    background-color: #4bb4f8;
+}
+
 #loginButton {
     margin-bottom: 8px;
 }
